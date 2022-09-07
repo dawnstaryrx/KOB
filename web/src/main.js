@@ -3,4 +3,4 @@ import App from './App.vue'
 import router from './router'
 
 createApp(App).use(router).mount('#app')
-document.title = "贪吃蛇之王";
+document.title = "蛇战群雄";
