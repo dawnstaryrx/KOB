@@ -8,10 +8,10 @@
             <router-link :class="route_name == 'pk_index' ? 'nav-link active' : 'nav-link'" aria-current="page" :to="{name: 'pk_index'}">对战</router-link>
         </li>
         <li class="nav-item">
-            <router-link :class="route_name == 'record_index' ? 'nav-link active' : 'nav-link'" :to="{name: 'record_index'}">对局列表</router-link>
+            <router-link :class="route_name == 'record_index' ? 'nav-link active' : 'nav-link'" :to="{name: 'record_index'}">历史对局</router-link>
         </li>
         <li class="nav-item">
-            <router-link :class="route_name == 'ranklist_index' ? 'nav-link active' : 'nav-link'" :to="{name: 'ranklist_index'}">排行榜</router-link>
+            <router-link :class="route_name == 'ranklist_index' ? 'nav-link active' : 'nav-link'" :to="{name: 'ranklist_index'}">天梯榜</router-link>
         </li>
         </ul>
         <ul class="navbar-nav" v-if="$store.state.user.is_login">
@@ -21,14 +21,14 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                    <router-link class="dropdown-item" :to="{name: 'user_bot_index'}">我的机器</router-link>
+                    <router-link class="dropdown-item" :to="{name: 'user_bot_index'}">个人中心</router-link>
                 </li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#" @click="logout">退出</a></li>
             </ul>
         </li>
         </ul>
-        <ul class="navbar-nav" v-else>
+        <ul class="navbar-nav" v-else-if="!$store.state.user.pulling_info">
             <li class="nav-item dropdown">
             <router-link class="nav-link" :to="{ name: 'user_account_login' }" role="button">
             登录

@@ -1,2 +1,4 @@
-#### 星光荡开宇宙，贪吃蛇之king闪耀其中！
-#### 加油💪
+#### [![OSCS Status](https://www.oscs1024.com/platform/badge/dawnstaryrx/KOB.svg?size=small)](https://www.oscs1024.com/project/dawnstaryrx/KOB?ref=badge_small)
+#### ### 蛇战群雄
+
+(ง •_•)ง
