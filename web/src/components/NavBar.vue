@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-    <router-link class="navbar-brand" :to="{name: 'home'}">🐍蛇战群雄</router-link>
+    <router-link class="title navbar-brand" :to="{name: 'home'}" style="color: rgb(210, 180, 44)">🐍蛇战群雄</router-link>
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -69,5 +69,7 @@ export default{
 </script>
 
 <style scoped>
-
+/* .title{
+    color: yellow;
+} */
 </style>

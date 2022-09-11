@@ -12,7 +12,7 @@ export class Snake extends AcGameObject {
         this.cells = [new Cell(info.r, info.c)];//存放蛇的身体 cells[0]存放蛇头
         this.next_cell = null; // 下一步的目标位置
 
-        this.speed = 5;
+        this.speed = 3;
         this.direction = -1; // -1表示没有指令， 0 1 2 3 表示上右下左
         this.status = "idle"; // idle 静止 move 正在移动 die 死亡
 
