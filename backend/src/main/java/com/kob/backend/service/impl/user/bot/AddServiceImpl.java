@@ -5,7 +5,6 @@ import com.kob.backend.pojo.Bot;
 import com.kob.backend.pojo.User;
 import com.kob.backend.service.impl.utils.UserDetailsImpl;
 import com.kob.backend.service.user.bot.AddService;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -20,8 +19,6 @@ public class AddServiceImpl implements AddService {
 
     @Autowired
     private BotMapper botMapper;
-
-
 
     @Override
     public Map<String, String> add(Map<String, String> data) {
